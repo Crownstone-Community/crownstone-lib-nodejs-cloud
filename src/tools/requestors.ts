@@ -17,7 +17,7 @@ import { CrownstoneV2Requests } from "./requests/nextCloud/crownstoneV2Requests"
 
 export class CloudRequestor extends RequestorBase {
 
-  constructor(tokenStore: TokenStore, cache: CacheStorage, customEndpoint: string = 'https://cloud.crownstone.rocks/api/') {
+  constructor(tokenStore: TokenStore, cache: CacheStorage, customEndpoint: string = 'https://cloud.ownstone.org/api/') {
     super(tokenStore, cache);
     this.setEndpoint(customEndpoint);
   }
@@ -40,7 +40,7 @@ export class CloudRequestor extends RequestorBase {
 
 export class CloudRequestorV2 extends RequestorBase {
 
-  constructor(tokenStore: TokenStore, cache: CacheStorage, customEndpoint: string = 'https://next.crownstone.rocks/api/') {
+  constructor(tokenStore: TokenStore, cache: CacheStorage, customEndpoint: string = 'https://next.ownstone.org/api/') {
     super(tokenStore, cache);
     this.setEndpoint(customEndpoint);
   }
@@ -86,7 +86,7 @@ Util.applyMixins(CloudRequestorV2, [
 
 export class WebhookRequestor extends RequestorBase {
 
-  constructor(tokenStore: TokenStore, cache: CacheStorage, customEndpoint: string = 'https://webhooks.crownstone.rocks/api/') {
+  constructor(tokenStore: TokenStore, cache: CacheStorage, customEndpoint: string = 'https://webhooks.ownstone.org/api/') {
     super(tokenStore, cache);
     this.setEndpoint(customEndpoint);
   }
